@@ -1,0 +1,95 @@
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circleBox {
+        position: relative;
+        border: 2px solid black;
+        width: 800px;
+        height: 400px;
+    }
+
+    .circle {
+        position: absolute;
+        top: 30%;
+        left: 40%;
+        width: 150px;
+        height: 150px;
+    }
+
+    .circle:nth-of-type(8) {
+        background-color: red;
+        animation: change 1s ease-out 0s normal;
+        animation-fill-mode: forwards;
+    }
+
+    .circle:nth-of-type(7) {
+        background-color: yellow;
+        animation: change 1s ease-out 1s normal;
+        animation-fill-mode: forwards;
+    }
+
+    .circle:nth-of-type(6) {
+        background-color: blue;
+        animation: change 1s ease-out 2s normal;
+        animation-fill-mode: forwards;
+    }
+
+    .circle:nth-of-type(5) {
+        background-color: green;
+        animation: change 1s ease-out 3s normal;
+        animation-fill-mode: forwards;
+    }
+
+    .circle:nth-of-type(4) {
+        background-color: orange;
+        animation: change 1s ease-out 4s normal;
+        animation-fill-mode: forwards;
+    }
+
+    .circle:nth-of-type(3) {
+        background-color: purple;
+        animation: change 1s ease-out 5s normal;
+        animation-fill-mode: forwards;
+    }
+
+    .circle:nth-of-type(2) {
+        background-color: greenyellow;
+        animation: change 1s ease-out 6s normal;
+        animation-fill-mode: forwards;
+    }
+
+    .circle:nth-of-type(1) {
+        background-color: aqua;
+        animation: change 1s ease-out 3s normal;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes change {
+        0% {
+            width: 150px;
+        }
+
+        100% {
+            width: 0;
+        }
+    }
+</style>
+
+<div class="container">
+    <div class="circleBox">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+    <p>change color</p>
+</div>
